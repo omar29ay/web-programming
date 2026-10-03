@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omar Ayman Taha - Personal Page</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <img
+      src="images/logo-320.png"
+      srcset="images/logo-160.png 160w,
+              images/logo-320.png 320w,
+              images/logo-640.png 640w"
+      sizes="160px"
+      alt="Omar's logo: the letter O styled like planet Saturn"
+      width="160" height="160">
+    <h1>Omar Ayman Taha</h1>
+    <p>Computer Engineering student | Data Science and Artificial Intelligence</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="schedule.html">Weekly Schedule</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="images/me.jpg" alt="Portrait of Omar Ayman Taha" width="200" height="200">
+      <p>I am a second-year <strong>Computer Engineering</strong> student specializing in <strong>Data Science and Artificial Intelligence</strong>.</p>
+      <p>I enjoy building projects with <em>Python</em> and learning how intelligent systems work. I am also enrolled in an AI Diploma at Instant Software Solutions. Outside of tech, I love storytelling, cinema and animation.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <h3>Elsewedy University of Technology (SUTech)</h3>
+      <p>Faculty of Computer Engineering, Data Science and Artificial Intelligence track. Second year.</p>
+      <h3>AI Diploma at Instant Software Solutions</h3>
+      <p>A diploma I recently started to build practical, real-world AI skills. It covers:</p>
+      <ul>
+        <li>Machine Learning and Deep Learning</li>
+        <li>Natural Language Processing (NLP)</li>
+        <li>Generative AI</li>
+        <li>Data Analysis, SQL and Power BI</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>HTML</li>
+      </ul>
+      <h3>Personal Skills</h3>
+      <ul>
+        <li>Leadership</li>
+        <li>Teamwork</li>
+        <li>Working under pressure</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>NovaBank is the latest project I built during the AI Diploma. I have also worked on earlier projects, and I am currently working on more advanced ones that I will add here soon.</p>
+      <article>
+        <h3>NovaBank - Banking Management System (latest diploma project)</h3>
+        <p>An educational banking system built with <strong>Python</strong>, Object-Oriented Programming and <strong>Streamlit</strong>. It manages customers, savings and checking accounts, deposits, withdrawals, transfers and transaction history, and saves its data in JSON files. It is an academic simulation, not a production banking platform.</p>
+        <p><a href="https://github.com/omar29ay/NovaBank">View NovaBank on GitHub</a></p>
+
+        <h4>Architecture (layers)</h4>
+        <ol>
+          <li>Backend: Python classes and banking rules</li>
+          <li>Service layer: the Bank class coordinates customers, accounts and transactions</li>
+          <li>Frontend: Streamlit web interface</li>
+          <li>Persistence: JSON storage between sessions</li>
+        </ol>
+
+        <h4>OOP concepts used</h4>
+        <dl>
+          <dt>Encapsulation</dt>
+          <dd>The balance and status are protected attributes, changed only through methods like deposit() and withdraw().</dd>
+          <dt>Inheritance</dt>
+          <dd>SavingsAccount and CheckingAccount inherit from Account.</dd>
+          <dt>Polymorphism</dt>
+          <dd>CheckingAccount overrides withdraw() to support an overdraft limit.</dd>
+          <dt>Abstraction</dt>
+          <dd>Simple operations hide the internal state management.</dd>
+          <dt>Composition</dt>
+          <dd>The Bank object manages Customer, Account and Transaction objects.</dd>
+        </dl>
+
+        <h4>Custom exceptions</h4>
+        <ul>
+          <li>InvalidAmountError</li>
+          <li>InsufficientFundsError</li>
+          <li>AccountNotFoundError</li>
+          <li>DuplicateAccountError, DuplicateCustomerError and CustomerNotFoundError</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>AI Diploma (in progress)</h3>
+        <p>Learning Machine Learning, Deep Learning, NLP and Generative AI, and building real-world projects along the way.</p>
+      </article>
+    </section>
+
+    <section id="interests">
+      <h2>Interests and Vision</h2>
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Reading</li>
+        <li>Writing and story authoring</li>
+        <li>Acting, directing and voice dubbing</li>
+        <li>Cinema, animation and art in general</li>
+      </ul>
+      <h3>My Vision</h3>
+      <p>I aim to study Artificial Intelligence in order to <strong>serve the film industry and animation, not replace artists</strong>. I want to use AI to make cinema and animation production easier, with the highest quality at the lowest cost, so that talented people can finally get their chance even without connections, closed circles or the huge budgets that film and animation production usually demands.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:omar250101871@sut.edu.eg">omar250101871@sut.edu.eg</a></p>
+      <p>Find me on <a href="https://github.com/omar29ay">GitHub</a> and <a href="https://www.linkedin.com/in/omar-ayman-81546a422">LinkedIn</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Omar Ayman Taha</p>
+  </footer>
+</body>
+</html>
